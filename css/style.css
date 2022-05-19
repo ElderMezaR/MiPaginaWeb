@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    /*BG Color*/
+    --primary-color:#2F8F9D;
+    --secondary-color: #3BACB6;
+    --terciary-color:#82DBD8;
+    --terniary-color:#B3E8E5;
+    --gradient-color: linear-gradient(-224deg, var(--primary-color) 0, #337DFF 100%);
+    --gradient-text: linear-gradient(120deg, #1C99FE 20.69%, #7644FF 50.19%, var(--primary-color) 79.69%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--primary-color)', endColorstr='var(--secondary-color)', GradientType=1);
+    /* Text Color*/
+    --primary-font:'Poppins', sans-serif;
+    --primary-text: #FD4766;
+    --text-gray: #c6c9d8bf;
+    --text-white: #fff;
+}
+
+body{
+    font-family: var(--primary-font);
+    background-color: var(--secondary-color);
+}
+
+hr{
+    width: 75%;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin:2px 0%;
+}
+
+a{text-decoration: none;}
+
+
+
+.navbar, footer .container-fluid{
+    background-color: var(--primary-color) !important;
+}
+
+.navbar-toggler{
+    border: 0;
+    color: var(--terniary-color);
+    line-height: 2;
+}
+
+.nav-item .nav-link::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transition: 0.3s;
+    bottom: 0;
+}
+.nav-item .nav-link.active::after,
+.nav-item .nav-link:hover::after{
+    width: 100%;
+}
+
+.nav-item .nav-link.active,
+.nav-item .nav-link:hover{
+    color: black;
+    transition: 0.3s;
+}
+
+.navbar .nav-link{
+    color: var(--terniary-color);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.contacto_wrapper{
+    background-color: var(--terciary-color) !important;
+}
+
+.navbar-brand{
+    padding-left: 5rem;
+}
+.logo{
+    max-width: 3rem;
+    height: auto;
+}
+.slider_wrapper{
+    width: 100%;
+}
+.renglon_slider{
+    margin: 2vh 0;
+    height: 40vh;
+    width: 100%;
+    padding:0 2vh;
+}
+.slider_wrapper img{
+    height: 40vh;
+    width: 100%;
+}
+
+
+.contenido_pres{
+    padding-top: 10%;
+}
+
+.tratamientos_wrapper .card{
+    margin:0 auto;
+    float:none;
+    margin-bottom:10px;
+}
+
+.espacio_seccion{
+    margin-top: 7.5%;
+
+}
+
+@media (max-width:991.98px) {
+    .logo2{
+        text-align:left !important;
+    }
+}
+@media (max-width:576px) {
+    iframe{
+        max-width: 75%;
+        height: auto;
+    }
+    
+}
