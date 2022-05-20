@@ -46,26 +46,6 @@ a{text-decoration: none;}
     line-height: 2;
 }
 
-.nav-item .nav-link::after{
-    position: absolute;
-    content: '';
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: var(--primary-color);
-    transition: 0.3s;
-    bottom: 0;
-}
-.nav-item .nav-link.active::after,
-.nav-item .nav-link:hover::after{
-    width: 100%;
-}
-
-.nav-item .nav-link.active,
-.nav-item .nav-link:hover{
-    color: black;
-    transition: 0.3s;
-}
 
 .navbar .nav-link{
     color: var(--terniary-color);
